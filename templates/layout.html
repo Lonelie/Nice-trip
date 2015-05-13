@@ -1,8 +1,12 @@
 <template name="layout">
 
+<nav>
 <h1>Nice trip</h1>
-{{> trips }}
+{{> loginButtons }}
+</nav>
+<div class="content">
+	{{> trips }}
 
-{{> nicetrip }}
-
+	{{> nicetrip }}	
+</div>
 </template>
