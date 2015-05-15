@@ -5,6 +5,12 @@ Template.trips.helpers({
     'Trips' : Trips.find({}, {sort : {dest : 1}})
 });
 
+Template.tripDetail.helpers({
+  Trips: function() {
+    return Trips.find({});
+  }
+});
+
 
 // Helpers
 /*Template.nicetrip.helpers

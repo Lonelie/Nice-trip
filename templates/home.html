@@ -1,0 +1,7 @@
+<template name="home">
+	<p>Derniers trajets ajoutés</p>
+		{{> trips }}
+	{{#if currentUser}}
+		{{> nicetrip }}
+	{{/if}}
+</template>
