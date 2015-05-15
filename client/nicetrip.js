@@ -41,10 +41,11 @@ Template.nicetrip.events = {
 
             var $dest = template.find( "#dest" );
             var $arrival = template.find( "#arrival" );
+            var $price = template.find( "#price" );
 
-      if ( $dest.value !== "" && $arrival.value !== "" )
+      if ( $dest.value !== "" && $arrival.value !== "" && $price.value !== "")
       {
-       Trips.insert( {dest : $dest.value, arrival : $arrival.value} );
+       Trips.insert( {dest : $dest.value, arrival : $arrival.value, price : $price.value} );
       }
     }
 

@@ -6,6 +6,8 @@ body {
 	font-familly:'Avenir';
 	margin:0;
 	padding: 0;
+	background: url(img/background.jpg);
+	background-size: cover;
 }
 header {
 	height: 80px;
@@ -17,6 +19,16 @@ h1 {
 	line-height: 80px;
 }
 .content {
-	background: #dedbba;
-
+	color: #fff;
+	font-size: 28px;
+	text-transform: capitalize;
+	border: 2px solid #fff;
+	width: 50%;
+	margin: 80px auto;
+	padding-left: 15px;
+}
+.content p {
+	display: inline-block;
+	height: 45px;
+	line-height: 45px;
 }
