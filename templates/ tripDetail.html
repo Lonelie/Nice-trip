@@ -1,5 +1,9 @@
 <template name="tripDetail">
     <p id="dest">{{ dest }}</p>
     <p id="arrival">{{ arrival }}</p>
-    <p id="price">{{ price }}</p>
+    <p id="price">{{ price }} euros</p>
+    <p id="car">{{ car }}</p>
+    
+  	<a href="{{ pathFor 'delete' }}" class="delete">Supprimer</a>
+	
 </template>

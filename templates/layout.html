@@ -4,7 +4,9 @@
 <h1>Nice trip</h1>
 {{> loginButtons }}
 </header>
+{{#if currentUser}}
 <div class="content">
 {{> yield }}	
 </div>
+{{/if}}
 </template>

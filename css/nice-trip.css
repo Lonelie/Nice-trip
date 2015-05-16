@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+
 html {
 	padding: 0;
 	margin: 0;
@@ -17,6 +19,16 @@ header {
 h1 {
 	margin: 0;
 	line-height: 80px;
+	font-family: 'Lobster';
+}
+h3 {
+	color: #fff;
+	text-align: center;
+	padding-top: 80px;
+	font-size: 28px;
+}
+.home {
+	text-align: center;
 }
 .content {
 	color: #fff;
@@ -31,4 +43,54 @@ h1 {
 	display: inline-block;
 	height: 45px;
 	line-height: 45px;
+}
+.tripList li{
+	list-style-type: none;
+	line-height: 27px;
+	font-size: 22px;
+}
+.tripList li a {
+	color: #fff;
+}
+.add {
+	border: #2ecc71 1px solid;
+	color: #fff;
+	-webkit-transition: all .5s ease-in-out 0s;
+	   -moz-transition: all .5s ease-in-out 0s;
+	    -ms-transition: all .5s ease-in-out 0s;
+	     -o-transition: all .5s ease-in-out 0s;
+	        transition: all .5s ease-in-out 0s;
+	        height: 40px;
+	        font-size: 25px;
+	        padding: 5px 10px;
+	 		background: none;
+}
+.add:hover {
+	background-color: #2ecc71;
+	border: none;
+	color: #fff;
+	text-decoration: none;
+}
+.delete {
+	border: #e74c3c 1px solid;
+	color: #fff;
+	-webkit-transition: all .5s ease-in-out 0s;
+	   -moz-transition: all .5s ease-in-out 0s;
+	    -ms-transition: all .5s ease-in-out 0s;
+	     -o-transition: all .5s ease-in-out 0s;
+	        transition: all .5s ease-in-out 0s;
+	        height: 40px;
+	        line-height: 40px;
+	        font-size: 25px;
+	        padding: 5px 10px;
+}
+.delete:hover {
+	background-color: #e74c3c;
+	border: none;
+	color: #fff;
+	text-decoration: none;
+}
+.login-link-text {
+	color: #000;
+	font-size: 20px;
 }

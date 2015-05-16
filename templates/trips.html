@@ -1,6 +1,6 @@
 
 <template name="trips">
-     <ul>
+     <ul class="tripList">
         {{#each Trips}}
             <li><a href="{{ pathFor 'tripDetail' }}">{{ dest }}  {{ arrival }}</a></li>
         {{/each}}

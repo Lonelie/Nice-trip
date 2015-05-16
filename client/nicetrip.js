@@ -8,29 +8,12 @@ Template.trips.helpers({
 Template.tripDetail.helpers({
   Trips: function() {
     return Trips.find({});
+  },
+  isOwner: function() {
+    return this.userId === Meteor.userId();
   }
 });
 
-
-// Helpers
-/*Template.nicetrip.helpers
-(
-  {
-
-    trips : function () {
-            console.log(Trips);
-            return Trips.find().fetch(
-
-                function( trip, index, cursor ){
-
-                    return { _id : trip._id, dest: trip.dest, arrival : trip.arrival };
-            }
-
-          );
-    }
-  }
-);
-*/
 // Events
 Template.nicetrip.events = {
 
@@ -42,13 +25,18 @@ Template.nicetrip.events = {
             var $dest = template.find( "#dest" );
             var $arrival = template.find( "#arrival" );
             var $price = template.find( "#price" );
+            var $car = template.find( "#car" );
 
-      if ( $dest.value !== "" && $arrival.value !== "" && $price.value !== "")
+      if ( $dest.value !== "" && $arrival.value !== "" && $price.value !== "" && $car.value !== "")
       {
-       Trips.insert( {dest : $dest.value, arrival : $arrival.value, price : $price.value} );
+       Trips.insert( {dest : $dest.value, arrival : $arrival.value, price : $price.value, car : $car.value} );
       }
     }
 
 };
 
-
+Template.tripDetail.events({
+  "click .delete": function () {
+    Trips.remove(this._id);
+  }
+});

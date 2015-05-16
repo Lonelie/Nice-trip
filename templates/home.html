@@ -1,7 +1,8 @@
 <template name="home">
+<h3>Trouver un covoiturage rapidement !</h3>
+	{{#if currentUser}}
 	<p>Derniers trajets ajoutés</p>
 		{{> trips }}
-	{{#if currentUser}}
 		{{> nicetrip }}
 	{{/if}}
 </template>
